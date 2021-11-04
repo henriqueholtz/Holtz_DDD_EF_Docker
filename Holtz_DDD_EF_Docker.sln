@@ -3,9 +3,69 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31727.386
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Services", "1 - Services", "{449CEE4D-FAFA-4AFD-BEB7-A348FC16714E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{1F641DEB-5231-4DFC-8E61-A54479D0AECB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{C74BA3F4-B7C4-4ADA-B52F-BE3B81AFD83D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infraestructure", "4 - Infraestructure", "{32DDA986-93C3-42DA-BBE6-DF10637BBB82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Tests", "5 - Tests", "{FE6851F8-1B0F-4B96-8E28-B2D614DDE442}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Holtz_DDD_EF_Docker.Application", "Holtz_DDD_EF_Docker.Application\Holtz_DDD_EF_Docker.Application.csproj", "{9E3C996D-A916-49F1-A95C-888C2C6EE60F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Holtz_DDD_EF_Docker.Domain", "Holtz_DDD_EF_Docker.Domain\Holtz_DDD_EF_Docker.Domain.csproj", "{C3C1F04D-EC04-4503-A5CD-A6689319A851}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Holtz_DDD_EF_Docker.Domain.Core", "Holtz_DDD_EF_Docker.Domain.Core\Holtz_DDD_EF_Docker.Domain.Core.csproj", "{4113C11D-18A9-4112-B97D-310C36DEDBBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Holtz_DDD_EF_Docker.Domain.Services", "Holtz_DDD_EF_Docker.Domain.Services\Holtz_DDD_EF_Docker.Domain.Services.csproj", "{224BD2B1-FEF4-4B9B-8082-A548FF3DB0DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Holtz_DDD_EF_Docker.API", "Holtz_DDD_EF_Docker.API\Holtz_DDD_EF_Docker.API.csproj", "{CC853537-2227-4FBB-8D87-75CCE08DF75B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Holtz_DDD_EF_Docker.Infraestructure", "Holtz_DDD_EF_Docker.Infraestructure\Holtz_DDD_EF_Docker.Infraestructure.csproj", "{D891FB75-8627-4D33-A15A-B5686FE7B691}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E3C996D-A916-49F1-A95C-888C2C6EE60F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E3C996D-A916-49F1-A95C-888C2C6EE60F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E3C996D-A916-49F1-A95C-888C2C6EE60F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E3C996D-A916-49F1-A95C-888C2C6EE60F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3C1F04D-EC04-4503-A5CD-A6689319A851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3C1F04D-EC04-4503-A5CD-A6689319A851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3C1F04D-EC04-4503-A5CD-A6689319A851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3C1F04D-EC04-4503-A5CD-A6689319A851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4113C11D-18A9-4112-B97D-310C36DEDBBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4113C11D-18A9-4112-B97D-310C36DEDBBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4113C11D-18A9-4112-B97D-310C36DEDBBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4113C11D-18A9-4112-B97D-310C36DEDBBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{224BD2B1-FEF4-4B9B-8082-A548FF3DB0DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{224BD2B1-FEF4-4B9B-8082-A548FF3DB0DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{224BD2B1-FEF4-4B9B-8082-A548FF3DB0DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{224BD2B1-FEF4-4B9B-8082-A548FF3DB0DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC853537-2227-4FBB-8D87-75CCE08DF75B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC853537-2227-4FBB-8D87-75CCE08DF75B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC853537-2227-4FBB-8D87-75CCE08DF75B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC853537-2227-4FBB-8D87-75CCE08DF75B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D891FB75-8627-4D33-A15A-B5686FE7B691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D891FB75-8627-4D33-A15A-B5686FE7B691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D891FB75-8627-4D33-A15A-B5686FE7B691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D891FB75-8627-4D33-A15A-B5686FE7B691}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9E3C996D-A916-49F1-A95C-888C2C6EE60F} = {1F641DEB-5231-4DFC-8E61-A54479D0AECB}
+		{C3C1F04D-EC04-4503-A5CD-A6689319A851} = {C74BA3F4-B7C4-4ADA-B52F-BE3B81AFD83D}
+		{4113C11D-18A9-4112-B97D-310C36DEDBBD} = {C74BA3F4-B7C4-4ADA-B52F-BE3B81AFD83D}
+		{224BD2B1-FEF4-4B9B-8082-A548FF3DB0DC} = {C74BA3F4-B7C4-4ADA-B52F-BE3B81AFD83D}
+		{CC853537-2227-4FBB-8D87-75CCE08DF75B} = {449CEE4D-FAFA-4AFD-BEB7-A348FC16714E}
+		{D891FB75-8627-4D33-A15A-B5686FE7B691} = {32DDA986-93C3-42DA-BBE6-DF10637BBB82}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {56664535-F9A6-4236-929C-4B93393F57BB}
