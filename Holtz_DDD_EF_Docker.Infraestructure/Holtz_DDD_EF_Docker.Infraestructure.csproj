@@ -9,12 +9,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Holtz_DDD_EF_Docker.Application\Holtz_DDD_EF_Docker.Application.csproj" />
     <ProjectReference Include="..\Holtz_DDD_EF_Docker.Domain.Core\Holtz_DDD_EF_Docker.Domain.Core.csproj" />
     <ProjectReference Include="..\Holtz_DDD_EF_Docker.Domain\Holtz_DDD_EF_Docker.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="CrossCutting\" />
+    <Folder Include="CrossCutting\IOC\" />
   </ItemGroup>
 
 </Project>
