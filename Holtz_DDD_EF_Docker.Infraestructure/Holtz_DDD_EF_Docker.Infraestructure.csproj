@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="CrossCutting\Interfaces\" />
     <Folder Include="CrossCutting\IOC\" />
   </ItemGroup>
 

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Holtz_DDD_EF_Docker.Infraestructure.CrossCutting.Interfaces
+namespace Holtz_DDD_EF_Docker.Application.Map.Interfaces
 {
     public interface IMapperBase<TEntity, TEntityDto> where TEntity : class
     {

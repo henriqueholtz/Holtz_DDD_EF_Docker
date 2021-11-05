@@ -1,10 +1,10 @@
 ﻿using Holtz_DDD_EF_Docker.Application.Dtos;
+using Holtz_DDD_EF_Docker.Application.Map.Interfaces;
 using Holtz_DDD_EF_Docker.Domain.Entities;
-using Holtz_DDD_EF_Docker.Infraestructure.CrossCutting.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Holtz_DDD_EF_Docker.Infraestructure.CrossCutting.Map
+namespace Holtz_DDD_EF_Docker.Application.Map
 {
     public class MapperCustomer : IMapperCustomer
     {
