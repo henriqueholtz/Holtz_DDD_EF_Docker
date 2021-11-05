@@ -14,7 +14,7 @@ namespace Holtz_DDD_EF_Docker.Domain.Core.Exceptions
         {
             Entity = entity;
         }
-        public RepositoryException(string? message, Exception exception, string entity = null) : base(message, exception)
+        public RepositoryException(string message, Exception exception, string entity = null) : base(message, exception)
         {
             Entity = entity;
         }
