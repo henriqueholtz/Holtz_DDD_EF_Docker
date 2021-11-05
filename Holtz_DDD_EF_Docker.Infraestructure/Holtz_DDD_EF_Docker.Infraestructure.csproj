@@ -13,4 +13,8 @@
     <ProjectReference Include="..\Holtz_DDD_EF_Docker.Domain\Holtz_DDD_EF_Docker.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="CrossCutting\" />
+  </ItemGroup>
+
 </Project>
