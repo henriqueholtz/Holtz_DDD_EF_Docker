@@ -1,5 +1,5 @@
 ﻿using Holtz_DDD_EF_Docker.Application.Dtos;
-using Holtz_DDD_EF_Docker.Application.Map.Interfaces;
+using Holtz_DDD_EF_Docker.Application.Interfaces.Mappers;
 using Holtz_DDD_EF_Docker.Domain.Entities;
 using System.Collections.Generic;
 using System.Linq;
