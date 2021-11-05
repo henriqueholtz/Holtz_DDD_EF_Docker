@@ -6,7 +6,7 @@ namespace Holtz_DDD_EF_Docker.Domain.Core.Interfaces.Repositories
     {
         bool Create(TEntity entity);
         bool Update(TEntity entity);
-        bool Remove(int id);
+        bool Remove(TEntity entity);
         IEnumerable<TEntity> GetAll();
         TEntity GetById(int id);
     }

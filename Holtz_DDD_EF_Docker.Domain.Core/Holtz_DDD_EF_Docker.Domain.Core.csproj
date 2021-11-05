@@ -4,4 +4,12 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Interfaces\Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Holtz_DDD_EF_Docker.Domain\Holtz_DDD_EF_Docker.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

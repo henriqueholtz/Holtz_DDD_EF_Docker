@@ -2,8 +2,7 @@
 
 namespace Holtz_DDD_EF_Docker.Domain.Core.Interfaces.Repositories
 {
-    public interface IRepositoryProducts : IRepositoryBase<Product>
+    public interface IRepositoryCustomers : IRepositoryBase<Customer>
     {
-
     }
 }

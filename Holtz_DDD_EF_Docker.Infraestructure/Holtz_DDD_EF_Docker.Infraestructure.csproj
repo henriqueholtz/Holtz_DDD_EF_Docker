@@ -1,7 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Holtz_DDD_EF_Docker.Domain.Core\Holtz_DDD_EF_Docker.Domain.Core.csproj" />
+    <ProjectReference Include="..\Holtz_DDD_EF_Docker.Domain\Holtz_DDD_EF_Docker.Domain.csproj" />
+  </ItemGroup>
 
 </Project>
