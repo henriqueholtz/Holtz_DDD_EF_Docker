@@ -1,8 +1,7 @@
 ﻿using Holtz_DDD_EF_Docker.Domain.Core.Interfaces.Repositories;
 using Holtz_DDD_EF_Docker.Domain.Entities;
-using Holtz_DDD_EF_Docker.Infraestructure.Data;
 
-namespace Holtz_DDD_EF_Docker.Infraestructure.Repositories
+namespace Holtz_DDD_EF_Docker.Infraestructure.Data.Repositories
 {
     public class RepositoryCustomers : RepositoryBase<Customer>, IRepositoryCustomers
     {
