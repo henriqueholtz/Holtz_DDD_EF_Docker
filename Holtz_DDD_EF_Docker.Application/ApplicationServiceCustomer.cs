@@ -2,8 +2,8 @@
 using Holtz_DDD_EF_Docker.Application.Interfaces;
 using Holtz_DDD_EF_Docker.Application.Interfaces.Mappers;
 using Holtz_DDD_EF_Docker.Domain.Core.Interfaces.Services;
-using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Holtz_DDD_EF_Docker.Application
 {
@@ -19,27 +19,28 @@ namespace Holtz_DDD_EF_Docker.Application
         
         public void Add(CustomerDto dto)
         {
-            throw new NotImplementedException();
+            var customer = _mapper.MapperDtoToEntity(dto);
+            _serviceCustomers.Add(customer);
         }
 
         public IEnumerable<CustomerDto> GetAll()
         {
-            throw new NotImplementedException();
+            return _serviceCustomers.GetAll().Select(c => _mapper.MapperEntityToDto(c));
         }
 
         public CustomerDto GetById(int id)
         {
-            throw new NotImplementedException();
+            return _mapper.MapperEntityToDto(_serviceCustomers.GetById(id));
         }
 
         public void Remove(int id)
         {
-            throw new NotImplementedException();
+            _serviceCustomers.Remove(id);
         }
 
         public void Update(CustomerDto dto)
         {
-            throw new NotImplementedException();
+            _serviceCustomers.Update(_mapper.MapperDtoToEntity(dto));
         }
     }
 }
