@@ -37,7 +37,7 @@ namespace Holtz_DDD_EF_Docker.API.Controllers
                     return NoContent();
 
                 _applicationServiceProducts.Add(dto);
-                return Ok("Customer added succesfully!");
+                return Ok("Product added succesfully!");
 
             }
             catch
@@ -55,7 +55,7 @@ namespace Holtz_DDD_EF_Docker.API.Controllers
                     return NoContent();
 
                 _applicationServiceProducts.Update(dto);
-                return Ok("Customer updated succesfully!");
+                return Ok("Product updated succesfully!");
 
             }
             catch
@@ -70,7 +70,7 @@ namespace Holtz_DDD_EF_Docker.API.Controllers
             try
             {
                 _applicationServiceProducts.Remove(id);
-                return Ok("Customer removed succesfully!");
+                return Ok("Product removed succesfully!");
             }
             catch
             {
