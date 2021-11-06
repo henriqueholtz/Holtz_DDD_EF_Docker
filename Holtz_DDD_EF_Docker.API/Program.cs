@@ -4,7 +4,7 @@ using Microsoft.Extensions.Hosting;
 
 namespace Holtz_DDD_EF_Docker.API
 {
-    public class Program
+    public static class Program
     {
         public static void Main(string[] args)
         {

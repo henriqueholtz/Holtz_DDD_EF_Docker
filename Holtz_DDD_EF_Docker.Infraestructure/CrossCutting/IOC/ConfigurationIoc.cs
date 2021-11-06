@@ -10,7 +10,7 @@ using Holtz_DDD_EF_Docker.Infraestructure.Data.Repositories;
 
 namespace Holtz_DDD_EF_Docker.Infraestructure.CrossCutting.IOC
 {
-    public class ConfigurationIoc
+    public static class ConfigurationIoc
     {
         public static void Load(ContainerBuilder builder)
         {
