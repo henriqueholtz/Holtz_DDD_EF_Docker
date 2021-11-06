@@ -5,38 +5,38 @@ using System.Collections.Generic;
 
 namespace Holtz_DDD_EF_Docker.API.Controllers
 {
-    [Route("api/customer")]
+    [Route("api/product")]
     [ApiController]
-    public class CustomerController : ControllerBase
+    public class ProductController : ControllerBase
     {
-        private readonly IApplicationServiceCustomers _applicationServiceCustomers;
-        public CustomerController(IApplicationServiceCustomers applicationServiceCustomers)
+        private readonly IApplicationServiceProducts _applicationServiceProducts;
+        public ProductController(IApplicationServiceProducts applicationServiceProducts)
         {
-            _applicationServiceCustomers = applicationServiceCustomers;
+            _applicationServiceProducts = applicationServiceProducts;
         }
 
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return Ok(_applicationServiceCustomers.GetAll());
+            return Ok(_applicationServiceProducts.GetAll());
         }
 
 
         [HttpGet("{id}")]
         public ActionResult<IEnumerable<string>> Get(int id)
         {
-            return Ok(_applicationServiceCustomers.GetById(id));
+            return Ok(_applicationServiceProducts.GetById(id));
         }
 
         [HttpPost]
-        public ActionResult Add([FromBody] CustomerDto dto)
+        public ActionResult Add([FromBody] ProductDto dto)
         {
             try
             {
                 if (dto == null)
                     return NoContent();
 
-                _applicationServiceCustomers.Add(dto);
+                _applicationServiceProducts.Add(dto);
                 return Ok("Customer added succesfully!");
 
             }
@@ -47,14 +47,14 @@ namespace Holtz_DDD_EF_Docker.API.Controllers
         }
 
         [HttpPut]
-        public ActionResult Update([FromBody] CustomerDto dto)
+        public ActionResult Update([FromBody] ProductDto dto)
         {
             try
             {
                 if (dto == null)
                     return NoContent();
 
-                _applicationServiceCustomers.Update(dto);
+                _applicationServiceProducts.Update(dto);
                 return Ok("Customer updated succesfully!");
 
             }
@@ -69,7 +69,7 @@ namespace Holtz_DDD_EF_Docker.API.Controllers
         {
             try
             {
-                _applicationServiceCustomers.Remove(id);
+                _applicationServiceProducts.Remove(id);
                 return Ok("Customer removed succesfully!");
             }
             catch
