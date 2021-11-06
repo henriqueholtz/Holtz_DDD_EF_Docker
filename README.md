@@ -6,5 +6,6 @@ This application has been made with [this tutorial video](https://www.youtube.co
 * :heavy_check_mark: **DDD (Domain-Driven Design)**
 * :heavy_check_mark: **REST API**
 * :heavy_check_mark: **EFCore**
-* :heavy_check_mark: **Dependency injection** (with **Autofac**)**
+* :heavy_check_mark: **Dependency injection** (with **Autofac**)
 * :heavy_check_mark: **Docker**
+* :heavy_check_mark: **Swagger**
